@@ -42,7 +42,7 @@
           {{ if .Site.Params.since }}
             {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
           {{ else }}
-            {{ .Site.LastChange.Format "2006" }}
+            {{ .Site.Params.copyright }}
           {{ end }}
 
           {{ if .Site.Title }}
