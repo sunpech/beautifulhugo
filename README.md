@@ -1,6 +1,6 @@
 # Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
 
-![Beautiful Hugo Theme Screenshot](https://github.com/sunpech/beautifulhugo/blob/master/images/screenshot.png)
+![Beautiful Hugo Theme Screenshot](/images/screenshot.png)
 
 ## Installation
 
@@ -8,6 +8,10 @@
     $ cd themes
     $ git submodule add https://github.com/sunpech/beautifulhugo.git beautifulhugo
     
+## My Changes
+
+* Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
+* Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
 
 See [the Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
