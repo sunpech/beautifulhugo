@@ -1,13 +1,6 @@
 # Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
 
 ![Beautiful Hugo Theme Screenshot](/images/screenshot.png)
-<<<<<<< HEAD
-
-## Live demo
-
-See https://hugo-theme-beautifulhugo.netlify.app/
-=======
->>>>>>> 9db59ec (Updated readme to reflect my changes from original repo. Added example params into example site. Changed readme image to use relative path (works better in Visual Studio Code preview mode).)
 
 ## Installation
 
@@ -16,12 +9,9 @@ See https://hugo-theme-beautifulhugo.netlify.app/
     $ git submodule add https://github.com/sunpech/beautifulhugo.git beautifulhugo
     
 ## My Changes
-<<<<<<< HEAD
-=======
 
 * Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
 * Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
->>>>>>> 9db59ec (Updated readme to reflect my changes from original repo. Added example params into example site. Changed readme image to use relative path (works better in Visual Studio Code preview mode).)
 
 * Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
 * Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.

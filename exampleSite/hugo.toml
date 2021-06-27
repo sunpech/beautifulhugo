@@ -37,10 +37,6 @@ pygmentsCodefencesGuessSyntax = true
 #  cusdisID = "XXX" # Get your App id from cusdis.com
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-<<<<<<< HEAD:exampleSite/hugo.toml
-#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
-=======
->>>>>>> 9db59ec (Updated readme to reflect my changes from original repo. Added example params into example site. Changed readme image to use relative path (works better in Visual Studio Code preview mode).):exampleSite/config.toml
 	copyright = "2021"
 	selfHosted = true
 
