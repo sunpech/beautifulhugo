@@ -10,9 +10,23 @@ See https://hugo-theme-beautifulhugo.netlify.app/
 
 Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.io/getting-started/quick-start/) for details.
 
-Add Beautifulhugo:
+### Git Submodule
+
+Add Beautifulhugo as git submodule:
 
     $ git submodule add https://github.com/sunpech/beautifulhugo.git themes/beautifulhugo
+
+### Hugo module
+
+Initialize your site as hugo module:
+
+    $ hugo mod init github.com/USERNAME/SITENAME
+
+Add Beautifulhugo module as a dependency of your site:
+
+    $ hugo mod get github.com/halogenica/beautifulhugo
+
+### Site preview
 
 Copy the content of `exampleSite` at the root of your project:
 
@@ -60,7 +74,7 @@ pygmentsStyle = "trac"
 pygmentsUseClassic = true
 ```
 
-Pygments is mostly compatable with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file. 
+Pygments is mostly compatible with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file. 
 
 #### Highlight.js - Client side syntax highlighting
 ```
@@ -120,6 +134,15 @@ comments:
 ```
 
 If you *don't* have the section `[Params.staticman]` in `config.toml`, you *won't* need the section `reCaptcha`  in `staticman.yml`
+
+### Site Disclaimer
+
+If you need to put a Disclaimer on your website (e.g. "My views are my own and not my employer's"), you can do so via the following:
+
+* Uncomment and edit the `disclaimerText` parameter in `config.toml`.
+* If you need to adjust the disclaimer's styling, modify the declarations within the `footer div.disclaimer` selector in `static/css/main.css`.
+
+> The code for the disclaimer text is in `layouts/partials/footer.html`.  Moving this code block to another partial file (or relocating it within `footer.html`) will require changes to the css selector in `main.css` as well.
 
 ### Google Analytics
 
@@ -201,6 +224,19 @@ This is column 1.
 {{< column >}}
 This is column 2.
 {{< endcolumns >}}
+```
+
+### Social Media Icons
+
+In order to show social media icons in the footer, add a section like this to your `config.yaml`.  You can see the full list of supported social media sites in `data/beautifulhugo/social.toml`.
+
+```yaml
+author: 
+  name: "Author Name"
+  website: "https://example.com"
+  github: halogenica/beautifulhugo
+  twitter: username
+  discord: 96VAXXvjCB
 ```
 
 ## About
