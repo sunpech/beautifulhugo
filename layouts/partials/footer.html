@@ -33,6 +33,7 @@
             {{- end -}}
           {{ end }}
           {{ if .Site.Params.rss }}
+          {{ with .OutputFormats.Get "RSS" }}
           <li>
             <a href="/atom.xml" title="RSS">
               <span class="fa-stack fa-lg">
@@ -41,6 +42,7 @@
               </span>
             </a>
           </li>
+          {{ end }}
           {{ end }}
         </ul>
         <p class="credits copyright text-muted">
