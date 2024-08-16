@@ -8,7 +8,14 @@ See https://hugo-theme-beautifulhugo.netlify.app/
 
 ## Installation
 
-Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.io/getting-started/quick-start/) for details.
+    $ mkdir themes
+    $ cd themes
+    $ git submodule add https://github.com/sunpech/beautifulhugo.git beautifulhugo
+    
+## My Changes
+
+* Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
+* Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
 
 ### Git Submodule
 
