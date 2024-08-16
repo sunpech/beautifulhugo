@@ -58,7 +58,7 @@
           {{ if .Site.Params.since }}
             {{ .Site.Params.since }} - {{ .Site.Lastmod.Format "2006" }}
           {{ else }}
-            {{ .Site.Lastmod.Format "2006" }}
+            {{ .Site.Params.copyright }}
           {{ end }}
 
           {{ if .Site.Title }}

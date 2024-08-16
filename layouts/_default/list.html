@@ -8,24 +8,18 @@
           </div>
         {{ end }}
         <div class="posts-list">
-          {{ range .Paginator.Pages }}
-            {{ partial "post_preview.html" .}}
+          {{ range .Pages.GroupByDate "2006" }}
+            <h2>{{ .Key }}</h2>
+            <ul>
+              {{ range .Pages }}
+                <li>
+                  <!-- <img src="{{ .Params.thumbnail }}" alt="" /> -->
+                  <a href="{{ .Permalink }}">{{ .Title }}</a> // <small>{{ .Date.Format "January 2, 2006" }}</small>
+                </li>
+              {{ end }}
+            </ul>
           {{ end }}
         </div>
-        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-          <ul class="pager main-pager">
-            {{ if .Paginator.HasPrev }}
-              <li class="previous">
-                <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
-              </li>
-            {{ end }}
-            {{ if .Paginator.HasNext }}
-              <li class="next">
-                <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
       </div>
     </div>
   </div>
