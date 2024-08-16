@@ -13,14 +13,11 @@
 * Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
 * Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
 
-* Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
-* Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
-
 ### Git Submodule
 
 Add Beautifulhugo as git submodule:
 
-    $ git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
+    $ git submodule add https://github.com/sunpech/beautifulhugo.git themes/beautifulhugo
 
 ### Hugo module
 
@@ -30,7 +27,7 @@ Initialize your site as hugo module:
 
 Add Beautifulhugo module as a dependency of your site:
 
-    $ hugo mod get github.com/halogenica/beautifulhugo
+    $ hugo mod get github.com/sunpech/beautifulhugo
 
 ### Site preview
 
@@ -41,7 +38,7 @@ Copy the content of `exampleSite` at the root of your project:
 If you installed Beautifulhugo as hugo module, set your theme in your config file (hugo.toml):
 
     [[module.imports]]
-      path = "github.com/halogenica/beautifulhugo"
+      path = "github.com/sunpech/beautifulhugo"
 
 Start Hugo:
 
