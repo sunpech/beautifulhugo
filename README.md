@@ -1,13 +1,9 @@
 # Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
 
 ![Beautiful Hugo Theme Screenshot](/images/screenshot.png)
-<<<<<<< HEAD
-
 ## Live demo
 
 See https://hugo-theme-beautifulhugo.netlify.app/
-=======
->>>>>>> main
 
 ## Installation
 
@@ -20,9 +16,6 @@ See https://hugo-theme-beautifulhugo.netlify.app/
 * Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
 * Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
 
-<<<<<<< HEAD
-    $ git submodule add https://github.com/sunpech/beautifulhugo.git themes/beautifulhugo
-=======
 ### Git Submodule
 
 Add Beautifulhugo as git submodule:
@@ -40,25 +33,16 @@ Add Beautifulhugo module as a dependency of your site:
     $ hugo mod get github.com/sunpech/beautifulhugo
 
 ### Site preview
->>>>>>> main
 
 Copy the content of `exampleSite` at the root of your project:
 
     cp -r themes/beautifulhugo/exampleSite/* . -iv
-<<<<<<< HEAD
-    
-## My Changes
-
-* Posts *(/layouts/_default/list.html)* display grouping of all posts in descending order, sectioned by the year.
-* Footer partial *(/layouts/partials/footer.html)* pulls config parameter, *copyright*, to display copyright year.
-=======
 
 If you installed Beautifulhugo as hugo module, set your theme in your config file (hugo.toml):
 
     [[module.imports]]
       path = "github.com/sunpech/beautifulhugo"
 
->>>>>>> main
 Start Hugo:
 
     hugo serve
